@@ -30,7 +30,7 @@
                 <div class="flex gap-8 text-sm">
                     <a href="#home" class="nav-link text-slate-300">home</a>
                     <a href="https://github.com/ayertey1" target="_blank" class="nav-link text-slate-300">github</a>
-                    <a href="https://gh.linkedin.com/in/ayertey01" target="_blank" class="nav-link text-slate-300">linkedin</a>
+                    <a href="https://linkedin.com/in/ayertey01" target="_blank" class="nav-link text-slate-300">linkedin</a>
                     <a href="#contact" class="nav-link text-slate-300">contact</a>
                 </div>
             </div>
@@ -52,20 +52,129 @@
             </div>
             <div class="fade-in delay-3">
                 <h2 class="text-4xl lg:text-5xl font-bold text-slate-400 mb-8">
-                    I build data infrastructure at scale.
+                    I solve expensive data problems at scale.
                 </h2>
             </div>
             <div class="fade-in delay-4">
                 <p class="text-lg text-slate-400 leading-relaxed max-w-2xl">
-                    I'm a data engineer specializing in cloud-native architectures on AWS and Azure. Currently architecting event-driven pipelines and Delta Lakehouses that process <span class="text-slate-300 font-semibold">$2B+ in daily transactions</span>. I build systems that scale, migrate legacy infrastructure to modern platforms, and automate everything in between.
+                    I've migrated <span class="text-slate-300 font-semibold">100+ legacy ETL pipelines</span> to AWS and Azure, cutting runtime by 50% and manual work by 90%. I've built fraud detection infrastructure processing <span class="text-slate-300 font-semibold">$2B+ in daily transactions</span>, deployed Delta Lakehouses for financial services, and architected real-time event-driven systems across three continents. I turn chaotic data into reliable infrastructure—fast, automated, and boring.
                 </p>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="mb-40">
+            <h2 class="flex items-center gap-4 text-2xl font-semibold text-slate-200 mb-12">
+                <span class="section-number">01.</span>
+                <span>Experience</span>
+                <span class="flex-1 h-px bg-slate-800 ml-4"></span>
+            </h2>
+            
+            <div class="flex flex-col md:flex-row gap-8">
+                <!-- Company Tabs (Left Side) -->
+                <div class="md:w-48 flex flex-row md:flex-col gap-2 overflow-x-auto md:overflow-visible">
+                    <button class="experience-tab tab-active text-left px-4 py-3 mono text-sm border-l-2 border-slate-700 hover:bg-slate-800 hover:bg-opacity-50 transition-all whitespace-nowrap" data-company="bosonit">
+                        Bosonit
+                    </button>
+                    <button class="experience-tab text-left px-4 py-3 mono text-sm border-l-2 border-slate-700 hover:bg-slate-800 hover:bg-opacity-50 transition-all whitespace-nowrap" data-company="amalitech">
+                        AmaliTech
+                    </button>
+                    <button class="experience-tab text-left px-4 py-3 mono text-sm border-l-2 border-slate-700 hover:bg-slate-800 hover:bg-opacity-50 transition-all whitespace-nowrap" data-company="eprocess">
+                        eProcess (Ecobank)
+                    </button>
+                </div>
+
+                <!-- Experience Details (Right Side) -->
+                <div class="flex-1">
+                    <!-- Bosonit -->
+                    <div class="experience-content" id="bosonit">
+                        <h3 class="text-xl font-semibold text-slate-200 mb-1">
+                            Data Engineer <span class="glow-text">@ Bosonit</span>
+                        </h3>
+                        <p class="mono text-sm text-slate-400 mb-6">Nov 2025 - Present | Logroño, Spain (Remote)</p>
+                        <ul class="space-y-3 text-slate-300">
+                            <li class="flex gap-3">
+                                <span class="text-amber-500 mt-1.5">▹</span>
+                                <span>Built API-driven ingestion services to extract and normalize data from external systems into analytics-ready models</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="text-amber-500 mt-1.5">▹</span>
+                                <span>Architected AWS S3-based data lakes for scalable storage and ingestion workflows to support downstream analytics</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="text-amber-500 mt-1.5">▹</span>
+                                <span>Developed Docker-based test environments for API connectors, reducing deployment issues by 40%</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="text-amber-500 mt-1.5">▹</span>
+                                <span>Implemented database version control and environment consistency using Alembic for schema migrations</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="text-amber-500 mt-1.5">▹</span>
+                                <span>Built Grafana dashboards to monitor connector health, pipeline performance, and data quality metrics</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- AmaliTech -->
+                    <div class="experience-content hidden" id="amalitech">
+                        <h3 class="text-xl font-semibold text-slate-200 mb-1">
+                            Data Engineer <span class="glow-text">@ AmaliTech</span>
+                        </h3>
+                        <p class="mono text-sm text-slate-400 mb-6">Apr 2025 - Oct 2025 | Accra, Ghana (Hybrid)</p>
+                        <ul class="space-y-3 text-slate-300">
+                            <li class="flex gap-3">
+                                <span class="text-amber-500 mt-1.5">▹</span>
+                                <span>Engineered event-driven data pipelines using AWS (S3, Lambda, MWAA, Glue), cutting manual work by 90%</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="text-amber-500 mt-1.5">▹</span>
+                                <span>Optimized Redshift performance through strategic indexing, improving query speed by 60% for executive dashboards</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="text-amber-500 mt-1.5">▹</span>
+                                <span>Integrated Amazon Macie for automated PII tagging, ensuring GDPR compliance across 50+ datasets</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="text-amber-500 mt-1.5">▹</span>
+                                <span>Developed QuickSight KPI dashboards to present actionable insights to product leads</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- eProcess -->
+                    <div class="experience-content hidden" id="eprocess">
+                        <h3 class="text-xl font-semibold text-slate-200 mb-1">
+                            Data Engineer <span class="glow-text">@ eProcess International SA</span>
+                        </h3>
+                        <p class="mono text-sm text-slate-400 mb-6">Nov 2023 - Nov 2024 | Accra, Ghana</p>
+                        <ul class="space-y-3 text-slate-300">
+                            <li class="flex gap-3">
+                                <span class="text-amber-500 mt-1.5">▹</span>
+                                <span>Designed and deployed Delta Lakehouse architecture on Azure to modernize legacy SQL Server platforms</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="text-amber-500 mt-1.5">▹</span>
+                                <span>Migrated 100+ ETL pipelines from SSIS to Azure Data Factory and Databricks, cutting runtime by 50% and improving reliability to 98%</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="text-amber-500 mt-1.5">▹</span>
+                                <span>Ingested data to support Hawk-ai fraud detection workflows processing $2B+ in daily transactions</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="text-amber-500 mt-1.5">▹</span>
+                                <span>Streamlined code collaboration in Azure DevOps with CI/CD, reducing deployment errors by 65%</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- Impact Metrics -->
         <section class="mb-40">
             <h2 class="flex items-center gap-4 text-2xl font-semibold text-slate-200 mb-12">
-                <span class="section-number">01.</span>
+                <span class="section-number">02.</span>
                 <span>Impact</span>
                 <span class="flex-1 h-px bg-slate-800 ml-4"></span>
             </h2>
@@ -88,7 +197,7 @@
         <!-- Tech Stack -->
         <section class="mb-40">
             <h2 class="flex items-center gap-4 text-2xl font-semibold text-slate-200 mb-12">
-                <span class="section-number">02.</span>
+                <span class="section-number">03.</span>
                 <span>Tech Stack</span>
                 <span class="flex-1 h-px bg-slate-800 ml-4"></span>
             </h2>
@@ -136,7 +245,7 @@
         <!-- Projects -->
         <section class="mb-40">
             <h2 class="flex items-center gap-4 text-2xl font-semibold text-slate-200 mb-12">
-                <span class="section-number">03.</span>
+                <span class="section-number">04.</span>
                 <span>Featured Projects</span>
                 <span class="flex-1 h-px bg-slate-800 ml-4"></span>
             </h2>
@@ -199,34 +308,46 @@
         <!-- Certifications -->
         <section class="mb-20">
             <h2 class="flex items-center gap-4 text-2xl font-semibold text-slate-200 mb-12">
-                <span class="section-number">04.</span>
+                <span class="section-number">05.</span>
                 <span>Certifications</span>
                 <span class="flex-1 h-px bg-slate-800 ml-4"></span>
             </h2>
             <div class="grid md:grid-cols-2 gap-4 text-slate-300">
-                <div class="flex items-center gap-3">
+                <a href="https://www.credly.com/badges/your-aws-badge-id" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 hover:text-amber-500 transition-colors group">
                     <span class="text-xs glow-text">▸</span>
-                    <span>AWS Certified Data Engineer – Associate</span>
-                </div>
-                <div class="flex items-center gap-3">
+                    <span class="group-hover:translate-x-1 transition-transform">AWS Certified Data Engineer – Associate</span>
+                    <svg class="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                    </svg>
+                </a>
+                <a href="https://learn.microsoft.com/en-us/users/your-id/transcript/your-transcript-id" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 hover:text-amber-500 transition-colors group">
                     <span class="text-xs glow-text">▸</span>
-                    <span>Microsoft Certified: DevOps Engineer Expert</span>
-                </div>
-                <div class="flex items-center gap-3">
+                    <span class="group-hover:translate-x-1 transition-transform">Microsoft Certified: DevOps Engineer Expert</span>
+                    <svg class="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                    </svg>
+                </a>
+                <a href="https://www.hackerrank.com/certificates/your-sql-cert-id" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 hover:text-amber-500 transition-colors group">
                     <span class="text-xs glow-text">▸</span>
-                    <span>HackerRank: SQL (Basic)</span>
-                </div>
-                <div class="flex items-center gap-3">
+                    <span class="group-hover:translate-x-1 transition-transform">HackerRank: SQL (Basic)</span>
+                    <svg class="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                    </svg>
+                </a>
+                <a href="https://www.hackerrank.com/certificates/your-python-cert-id" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 hover:text-amber-500 transition-colors group">
                     <span class="text-xs glow-text">▸</span>
-                    <span>HackerRank: Python (Basic)</span>
-                </div>
+                    <span class="group-hover:translate-x-1 transition-transform">HackerRank: Python (Basic)</span>
+                    <svg class="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                    </svg>
+                </a>
             </div>
         </section>
 
         <!-- Contact -->
         <section id="contact" class="text-center py-20">
             <div class="max-w-2xl mx-auto">
-                <p class="section-number mb-4">05. What's Next?</p>
+                <p class="section-number mb-4">06. What's Next?</p>
                 <h2 class="text-4xl font-bold text-slate-200 mb-6">Get In Touch</h2>
                 <p class="text-slate-400 mb-8 leading-relaxed">
                     I'm currently open to new opportunities where I can architect data infrastructure at scale. Whether you're building the next fintech platform or modernizing legacy systems, let's talk.
@@ -249,7 +370,7 @@
 
     </main>
 
-    <!-- Optional: JavaScript for enhanced animations -->
+    <!-- JavaScript -->
     <script src="js/main.js"></script>
 
 </body>
