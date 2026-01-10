@@ -1,0 +1,234 @@
+/* ===================================
+   Portfolio Styles - Peter Caleb Ayertey
+   Data Engineer Portfolio
+   =================================== */
+
+/* Base Styles */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background: #0f0f1a;
+}
+
+/* Monospace Font */
+.mono {
+    font-family: 'JetBrains Mono', 'Courier New', monospace;
+}
+
+/* Glowing Text Effect */
+.glow-text {
+    color: #f59e0b;
+    text-shadow: 0 0 10px rgba(245, 158, 11, 0.3);
+}
+
+/* ===================================
+   Navigation Styles
+   =================================== */
+
+.nav-bg {
+    background-color: rgba(15, 15, 26, 0.9);
+}
+
+.nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: #f59e0b;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #f59e0b;
+}
+
+.nav-link:hover::before {
+    width: 100%;
+}
+
+/* ===================================
+   Section Headers
+   =================================== */
+
+.section-number {
+    color: #f59e0b;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.875rem;
+}
+
+/* ===================================
+   Metric Cards (Impact Section)
+   =================================== */
+
+.metric-card {
+    border: 1px solid #2d2d3d;
+    background: rgba(25, 25, 35, 0.5);
+    transition: all 0.3s ease;
+}
+
+.metric-card:hover {
+    border-color: #f59e0b;
+    transform: translateY(-4px);
+    background: rgba(25, 25, 35, 0.8);
+}
+
+/* ===================================
+   Project Cards
+   =================================== */
+
+.project-card {
+    border-left: 2px solid #2d2d3d;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    border-left-color: #f59e0b;
+    padding-left: 1.5rem;
+}
+
+/* ===================================
+   Tech Tags
+   =================================== */
+
+.tech-tag {
+    background: rgba(245, 158, 11, 0.1);
+    color: #f59e0b;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+/* ===================================
+   Animations
+   =================================== */
+
+/* Fade In Up Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+/* Animation Delays */
+.delay-1 { 
+    animation-delay: 0.1s; 
+    opacity: 0; 
+}
+
+.delay-2 { 
+    animation-delay: 0.2s; 
+    opacity: 0; 
+}
+
+.delay-3 { 
+    animation-delay: 0.3s; 
+    opacity: 0; 
+}
+
+.delay-4 { 
+    animation-delay: 0.4s; 
+    opacity: 0; 
+}
+
+/* Cursor Blink Animation */
+.cursor-blink {
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    50% { 
+        opacity: 0; 
+    }
+}
+
+/* ===================================
+   Gradient Border Effect
+   =================================== */
+
+.gradient-border {
+    position: relative;
+}
+
+.gradient-border::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(135deg, #f59e0b, #0f0f1a);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gradient-border:hover::after {
+    opacity: 1;
+}
+
+/* ===================================
+   Responsive Design
+   =================================== */
+
+/* Tablet and below */
+@media (max-width: 768px) {
+    /* Make hero text smaller on mobile */
+    h1 {
+        font-size: 2.5rem !important;
+    }
+    
+    h2 {
+        font-size: 1.875rem !important;
+    }
+    
+    /* Stack navigation vertically on very small screens */
+    @media (max-width: 480px) {
+        nav .flex {
+            flex-direction: column;
+            gap: 1rem;
+        }
+    }
+}
+
+/* ===================================
+   Accessibility
+   =================================== */
+
+/* Focus states for keyboard navigation */
+a:focus,
+button:focus {
+    outline: 2px solid #f59e0b;
+    outline-offset: 2px;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
