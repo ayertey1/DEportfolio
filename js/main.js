@@ -7,6 +7,32 @@
 document.addEventListener('DOMContentLoaded', function() {
     
     // ===================================
+    // Experience Tab Switching
+    // ===================================
+    const experienceTabs = document.querySelectorAll('.experience-tab');
+    const experienceContents = document.querySelectorAll('.experience-content');
+    
+    experienceTabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+            const targetCompany = this.getAttribute('data-company');
+            
+            // Remove active class from all tabs
+            experienceTabs.forEach(t => t.classList.remove('tab-active'));
+            
+            // Add active class to clicked tab
+            this.classList.add('tab-active');
+            
+            // Hide all content sections
+            experienceContents.forEach(content => {
+                content.classList.add('hidden');
+            });
+            
+            // Show target content
+            document.getElementById(targetCompany).classList.remove('hidden');
+        });
+    });
+    
+    // ===================================
     // Smooth Scrolling for Navigation Links
     // ===================================
     const navLinks = document.querySelectorAll('a[href^="#"]');
