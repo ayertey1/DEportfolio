@@ -212,6 +212,36 @@ body {
 }
 
 /* ===================================
+   Experience Tabs
+   =================================== */
+
+.experience-tab {
+    color: #94a3b8;
+    text-align: left;
+}
+
+.experience-tab.tab-active {
+    color: #f59e0b;
+    border-left-color: #f59e0b;
+    background: rgba(245, 158, 11, 0.1);
+}
+
+.experience-content {
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===================================
    Accessibility
    =================================== */
 
