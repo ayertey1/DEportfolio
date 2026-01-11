@@ -203,12 +203,12 @@ body {
     }
     
     /* Stack navigation vertically on very small screens */
-    @media (max-width: 480px) {
+    /* @media (max-width: 480px) {
         nav .flex {
             flex-direction: column;
             gap: 1rem;
         }
-    }
+    } */
 }
 
 /* ===================================
