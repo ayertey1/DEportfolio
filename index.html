@@ -3,11 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Peter Caleb Ayertey - Data Engineer specializing in AWS, Azure, and scalable data infrastructure">
-    <meta name="keywords" content="Data Engineer, AWS, Azure, Python, SQL, ETL, Data Pipeline">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Peter Caleb Ayertey - Data Engineer specializing in AWS, Azure, and scalable data infrastructure. Migrated 100+ ETL pipelines, built $2B+ transaction systems.">
+    <meta name="keywords" content="Peter Caleb Ayertey, Peter Ayertey, Caleb Ayertey, Ayertey, Data Engineer, AWS Data Engineer, Azure Data Engineer, ETL Pipeline, Databricks, Ghana Data Engineer">
     <meta name="author" content="Peter Caleb Ayertey">
     
-    <title>Peter Caleb Ayertey - Data Engineer</title>
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pcayertey.dev/">
+    <meta property="og:title" content="Peter Caleb Ayertey - Data Engineer">
+    <meta property="og:description" content="I solve expensive data problems at scale. Migrated 100+ ETL pipelines, built fraud detection for $2B+ transactions.">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Peter Caleb Ayertey - Data Engineer">
+    <meta name="twitter:description" content="I solve expensive data problems at scale. AWS & Azure specialist.">
+    
+    <title>Peter Caleb Ayertey - Data Engineer | AWS & Azure Specialist</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -26,12 +42,36 @@
     <nav class="fixed top-0 left-0 right-0 z-50 bg-opacity-90 backdrop-blur-sm nav-bg">
         <div class="max-w-6xl mx-auto px-6 lg:px-12 py-6">
             <div class="flex justify-between items-center">
-                <div class="mono text-sm glow-text">pcayertey.dev</div>
-                <div class="flex gap-8 text-sm">
-                    <a href="#home" class="nav-link text-slate-300">home</a>
-                    <a href="https://github.com/ayertey1" target="_blank" class="nav-link text-slate-300">github</a>
-                    <a href="https://linkedin.com/in/ayertey01" target="_blank" class="nav-link text-slate-300">linkedin</a>
-                    <a href="#contact" class="nav-link text-slate-300">contact</a>
+                <a href="#home" class="mono text-sm glow-text hover:opacity-80 transition-opacity">pcayertey.dev</a>
+                
+                <!-- Desktop & Mobile Navigation - Always horizontal -->
+                <div class="flex gap-6 md:gap-8 text-sm items-center">
+                    <!-- Desktop text links -->
+                    <a href="#home" class="nav-link text-slate-300 hidden md:inline">home</a>
+                    
+                    <!-- GitHub - always visible as icon on mobile, text on desktop -->
+                    <a href="https://github.com/ayertey1" target="_blank" rel="noopener noreferrer" class="md:nav-link text-slate-400 md:text-slate-300 hover:text-amber-500 transition-colors" aria-label="GitHub">
+                        <span class="hidden md:inline">github</span>
+                        <svg class="w-5 h-5 md:hidden" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    
+                    <!-- LinkedIn -->
+                    <a href="https://linkedin.com/in/ayertey01" target="_blank" rel="noopener noreferrer" class="md:nav-link text-slate-400 md:text-slate-300 hover:text-amber-500 transition-colors" aria-label="LinkedIn">
+                        <span class="hidden md:inline">linkedin</span>
+                        <svg class="w-5 h-5 md:hidden" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    
+                    <!-- Email -->
+                    <a href="mailto:pyterayertey@gmail.com" class="text-slate-400 md:text-slate-300 hover:text-amber-500 transition-colors md:nav-link" aria-label="Email">
+                        <span class="hidden md:inline">contact</span>
+                        <svg class="w-5 h-5 md:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>
@@ -71,7 +111,6 @@
             </h2>
             
             <div class="flex flex-col md:flex-row gap-8">
-                <!-- Company Tabs (Left Side) -->
                 <div class="md:w-48 flex flex-row md:flex-col gap-2 overflow-x-auto md:overflow-visible">
                     <button class="experience-tab tab-active text-left px-4 py-3 mono text-sm border-l-2 border-slate-700 hover:bg-slate-800 hover:bg-opacity-50 transition-all whitespace-nowrap" data-company="bosonit">
                         Bosonit
@@ -84,9 +123,7 @@
                     </button>
                 </div>
 
-                <!-- Experience Details (Right Side) -->
                 <div class="flex-1">
-                    <!-- Bosonit -->
                     <div class="experience-content" id="bosonit">
                         <h3 class="text-xl font-semibold text-slate-200 mb-1">
                             Data Engineer <span class="glow-text">@ Bosonit</span>
@@ -116,7 +153,6 @@
                         </ul>
                     </div>
 
-                    <!-- AmaliTech -->
                     <div class="experience-content hidden" id="amalitech">
                         <h3 class="text-xl font-semibold text-slate-200 mb-1">
                             Data Engineer <span class="glow-text">@ AmaliTech</span>
@@ -142,7 +178,6 @@
                         </ul>
                     </div>
 
-                    <!-- eProcess -->
                     <div class="experience-content hidden" id="eprocess">
                         <h3 class="text-xl font-semibold text-slate-200 mb-1">
                             Data Engineer <span class="glow-text">@ eProcess International SA</span>
@@ -251,11 +286,10 @@
             </h2>
             <div class="space-y-12">
                 
-                <!-- Project 1 -->
                 <div class="project-card pl-6 py-4 transition-all duration-300">
                     <div class="flex justify-between items-start mb-4">
                         <h3 class="text-xl font-semibold text-slate-200">Real-Time Ride-Hailing Pipeline</h3>
-                        <a href="https://github.com/ayertey1/NSP-Bolt-Ride-Real-Time-Trip-Processing-Project" target="_blank" class="mono text-sm glow-text hover:underline">view source →</a>
+                        <a href="https://github.com/ayertey1/NSP-Bolt-Ride-Real-Time-Trip-Processing-Project" target="_blank" rel="noopener noreferrer" class="mono text-sm glow-text hover:underline">view source →</a>
                     </div>
                     <p class="text-slate-400 mb-4">
                         Architected streaming pipeline using AWS ECS and Lambda into Redshift, orchestrated via MWAA Airflow with custom S3 sensors. Built QuickSight dashboards for real-time revenue and density analytics.
@@ -268,11 +302,10 @@
                     </div>
                 </div>
 
-                <!-- Project 2 -->
                 <div class="project-card pl-6 py-4 transition-all duration-300">
                     <div class="flex justify-between items-start mb-4">
                         <h3 class="text-xl font-semibold text-slate-200">Automated POS Data Validation</h3>
-                        <a href="https://github.com/datagroup-one/shopware-data-pipeline" target="_blank" class="mono text-sm glow-text hover:underline">view source →</a>
+                        <a href="https://github.com/datagroup-one/shopware-data-pipeline" target="_blank" rel="noopener noreferrer" class="mono text-sm glow-text hover:underline">view source →</a>
                     </div>
                     <p class="text-slate-400 mb-4">
                         Developed serverless batch validation system via AWS Glue and Lambda. Designed DynamoDB Dead Letter Queue logic for rejected rows, reducing manual cleanup and enforcing schema integrity at scale.
@@ -285,11 +318,10 @@
                     </div>
                 </div>
 
-                <!-- Project 3 -->
                 <div class="project-card pl-6 py-4 transition-all duration-300">
                     <div class="flex justify-between items-start mb-4">
                         <h3 class="text-xl font-semibold text-slate-200">IoT Heartbeat Monitor System</h3>
-                        <a href="https://github.com/ayertey1/GTP_DE-Projects/tree/prod_lab5" target="_blank" class="mono text-sm glow-text hover:underline">view source · prod_lab5 →</a>
+                        <a href="https://github.com/ayertey1/GTP_DE-Projects/tree/prod_lab5" target="_blank" rel="noopener noreferrer" class="mono text-sm glow-text hover:underline">view source · prod_lab5 →</a>
                     </div>
                     <p class="text-slate-400 mb-4">
                         Built distributed monitoring system via Apache Kafka. Containerized full stack (Zookeeper, PostgreSQL) with Docker Compose. Production logic maintained on prod_lab5 branch demonstrating deployment strategies.
@@ -359,19 +391,14 @@
         </section>
 
         <!-- Footer -->
-        <footer class="text-center py-8 text-sm text-slate-500 mono">
-            <div class="mb-4">
-                <a href="mailto:pyterayertey@gmail.com" class="hover:text-amber-500 transition-colors">pyterayertey@gmail.com</a>
-                <span class="mx-3">·</span>
-                <span>+1 (914) 497-2230</span>
-            </div>
-            <div>Elmsford, NY</div>
-        </footer>
+        <footer class="text-center py-8text-sm text-slate-500 mono">
+<a href="mailto:pyterayertey@gmail.com" class="hover:text-amber-500 transition-colors">pyterayertey@gmail.com</a>
+<span class="mx-3">·</span>
+<span>+1 (914) 497-2230</span>
+</footer>
+</main>
 
-    </main>
-
-    <!-- JavaScript -->
-    <script src="js/main.js"></script>
-
+<!-- JavaScript -->
+<script src="js/main.js"></script>
 </body>
 </html>
