@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // ===================================
     console.log('%c👋 Hey there, fellow developer!', 'color: #f59e0b; font-size: 16px; font-weight: bold;');
     console.log('%cInterested in the code? Check out the repo!', 'color: #94a3b8; font-size: 12px;');
-    console.log('%chttps://github.com/ayertey1', 'color: #f59e0b; font-size: 12px;');
+    console.log('%chttps://github.com/ayertey01', 'color: #f59e0b; font-size: 12px;');
     
     // ===================================
     // Copy Email to Clipboard (Optional Enhancement)
